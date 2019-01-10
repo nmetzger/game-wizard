@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  color: #333333;
+  background-color: #FBF3E6;
+  font-family: 'open sans', sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 1.8;
+}
+
+.header {
+  background-color: #ADE3D6;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+}
+
+main {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+/* FONTS */
+h2 {
+  font-size: 2rem;
+  font-family: 'poppins', sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-family: 'poppins', sans-serif;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+
+#description p, #description h1 {
+  margin: 0px auto;
+  max-width: 600px;
+}
+
+/* FANCY LINKS */
+
+a {
+  color: #37899C;
+  font-weight: 600;
+  text-decoration: none;
+  -webkit-transition: .2s;
+}
+
+a:hover {
+  color: #F25F54;
+}
+
+a:hover.fancy {
+  color: #37899C;
+}
+@media (-webkit-min-device-pixel-ratio:0) {
+  a.fancy {
+    background-color: #37899C;
+    background-image: -webkit-linear-gradient(left, #F25F54 0%, purple 50%, transparent 50%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    color: transparent;
+    -webkit-transition: .1s .2s;
+    -webkit-background-clip: text;
+  }
+
+  a:hover.fancy {
+    background-position: 0 0;
+    color: transparent;
+    transition: .4s 0;
+  }
+}
+
+/* IMAGES */
+
+#gamewizard_logo {
+    background: url(../images/gamewizard-logo.png) no-repeat center center;
+    width: 100%;
+    height: 20rem;
+    background-size: 476px 200px;
+    display: inline-block;
+    margin-top: 4rem;
+}
+
+.gamewizard_bg {
+    background: url(../images/gamewizard-bg2.png) no-repeat center center;
+    width: 100%;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    height: 100rem;
+    top: -1px;
+    z-index: -1;
+}
+
+img.gw_character {
+  width: 15rem;
+  height: auto;
+  display: block;
+  position:relative;
+  left: 1.3rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+img.gw_icon {
+  width: 15rem;
+  padding-bottom: 2rem;
+}
+
+img.dw_button {
+  border-radius: 1rem;
+  width: 6rem;
+  margin: 2rem 2rem 6rem 2rem;
+}
+
+img.gw_views{
+  width: 40rem;
+}
+
+.gw_divider1 {
+  background: url(../images/bg-color.png) repeat center center;
+}
+
+.gw_divider2 {
+  background: url(../images/avatars.png) repeat center center;
+}
+
+.gw_divider1, .gw_divider2 {
+    width: 100%;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size:auto 20rem;
+    height: 20rem;
+    z-index: -1;
+}
+
+/* SECTIONS */
+
+#description {
+    position: relative;
+    color: white;
+    background-color: #333333;
+    padding: 50px 20px 80px 20px;
+}
+
+#device {
+    background-color: #E65D7F;
+    font-size: 0px;
+    line-height: 0px;
+    padding: 10rem;
+}
+
+#appstores {
+  position: relative;
+  background-color: #F2C453;
+  padding: 80px 20px;
+}
+
+/* MISC */
+footer {
+  width: 100%;
+  display: inline-block;
+  height: 70px;
+  padding-top: 5rem;
+}
+
+footer .copyright {
+  width: 50%;
+  float: left;
+}
+
+footer .copyright p {
+  padding-left: 10%;
+  color: #333;
+  font-size: 0.7em;
+  line-height: 70px;
+}
+
+footer .social {
+  width: 20%;
+  float: right;
+}
+
+footer .social a {
+  float: left;
+  line-height: 60px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  -moz-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  -webkit-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+
+footer .social a:hover {
+  background-color: #D0EBE5;
+  -moz-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  -webkit-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+
+.fb, .tweet {
+  padding-top: 1rem;
+  width: 33%;
+}
+
+.support {
+  padding-top: 1rem;
+  width: 34%;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1024px) {
+  #device {
+      padding: 10rem 0rem;
+  }
+}
+
+@media (max-width: 600px) {
+  h1, h2, p {
+    padding: 0 2rem;
+  }
+
+  #gamewizard_logo {
+      background: url(../images/gamewizard-logo.png) no-repeat center center;
+      width: 100%;
+      height: 20rem;
+      background-size: 300px auto;
+      display: inline-block;
+      margin-top: 4rem;
+  }
+
+  img.gw_views{
+    width: 80%;
+  }
+
+  .gw_divider2 {
+      background: url(../images/bg-color.png) repeat center center;
+      width: 100%;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      -webkit-background-size: cover;
+      background-size:auto 20rem;
+      height: 20rem;
+      z-index: -1;
+  }
+
+  #device {
+      padding: 10rem 0rem;
+  }
+
+  /* MEDIA MISC */
+  footer .copyright {
+    width: 100%;
+  }
+
+  footer .copyright p {
+    text-align: center;
+    padding: 0;
+  }
+
+  footer .social {
+    width: 100%;
+  }
+}
